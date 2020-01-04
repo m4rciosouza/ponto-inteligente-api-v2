@@ -64,8 +64,7 @@ public class PontoInteligenteApplication {
 			funcionarioRepository.save(funcionario);
 
 			empresaRepository.findAll().forEach(System.out::println);
-			//funcionarioRepository.findAll().forEach(System.out::println);
-			funcionarioRepository.findByEmpresaId(empresa.getId()).forEach(System.out::println);
+			funcionarioRepository.findAll().forEach(System.out::println);
 
 			gerarLancamentos(funcionario, 20);
 		}
